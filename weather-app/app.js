@@ -5,11 +5,17 @@ $(() => {
   $.ajax({ url: endpoint }).then(data => {
     console.log(data);
     let tempK = data.main.temp;
-    // console.log(data.main.temp);
+    let weatherConditions = data.weather[0];
 
+    // convert Kelvin to Farenheit
     const tempConversion = () => {
       let tempF = Math.round(((tempK - 273.15) * 9) / 5 + 32);
-      console.log(tempF);
+      // console.log(tempF);
+
+      weatherConditions.temp = tempF;
+      delete weatherConditions.icon;
+      delete weatherConditions.id;
+      console.log(weatherConditions);
     };
     tempConversion();
   });
