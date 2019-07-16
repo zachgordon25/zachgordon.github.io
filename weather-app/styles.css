@@ -5,13 +5,23 @@
 body {
   background-color: #7ec0ee;
   /* background-repeat: no-repeat; */
+  /* display: flex; */
 }
 
 header h1 {
   color: black;
   text-align: center;
+  /* justify-content: center; */
+}
+
+#zip {
+  margin-right: 0px;
+  width: 100px;
 }
 
 #submit {
   background-color: white;
+  margin-left: 0px;
+  border-radius: 5px;
+  height: 20px;
 }
