@@ -1,4 +1,9 @@
 $(() => {
+  let date = new Date().toLocaleString('en-US', {
+    timeZone: 'America/New_York'
+  });
+  console.log(date);
+
   $('form').on('click', '#submit', event => {
     event.preventDefault();
     $('#forecast').empty();
@@ -6,7 +11,7 @@ $(() => {
     let zipCode = $zip.val();
     let endpoint = `http://api.openweathermap.org/data/2.5/weather?zip=${zipCode}&APPID=27191dbc29ccfde300356183b803d41f`;
     $.ajax({ url: endpoint }).then(data => {
-      // console.log(data);
+      console.log(data);
       let weatherConditions = data.weather[0];
       let tempK = data.main.temp;
       // $zip.hid();
