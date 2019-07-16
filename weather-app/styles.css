@@ -1,0 +1,17 @@
+* {
+  outline: 1px solid black;
+}
+
+body {
+  background-color: #7ec0ee;
+  /* background-repeat: no-repeat; */
+}
+
+header h1 {
+  color: black;
+  text-align: center;
+}
+
+#submit {
+  background-color: white;
+}
