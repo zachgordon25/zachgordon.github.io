@@ -1,11 +1,16 @@
 $(() => {
-  let zipCode = '94040';
-  let countryCode = 'us';
-  let endpoint = `http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=27191dbc29ccfde300356183b803d41f`;
+  let zipCode = '06854';
+  let endpoint = `http://api.openweathermap.org/data/2.5/weather?zip=${zipCode}&APPID=27191dbc29ccfde300356183b803d41f`;
+
   $.ajax({ url: endpoint }).then(data => {
     console.log(data);
+    let tempK = data.main.temp;
+    // console.log(data.main.temp);
+
+    const tempConversion = () => {
+      let tempF = Math.round(((tempK - 273.15) * 9) / 5 + 32);
+      console.log(tempF);
+    };
+    tempConversion();
   });
-  // const handleData = () => {
-  //   console.log(endpoint);
-  // };
 });
