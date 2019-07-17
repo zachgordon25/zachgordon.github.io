@@ -1,3 +1,7 @@
-# zachgordon25.github.io
+# giforecast (working name)
 
-https://github.com/zachgordon25/zachgordon25.github.io/tree/master/weather-app
+- API from openweathermap.org to access weather data from various zip codes in the US.
+
+- API from giphy to tie a gif to the current weather
+
+- Initially started with just the weather but wanted to build more
