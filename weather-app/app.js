@@ -12,12 +12,19 @@ $(() => {
     $.ajax({ url: endpoint }).then(data => {
       let weatherConditions = data.weather[0];
       let tempK = data.main.temp;
+
+      // GIF searchword
       let keyWord = data.weather[0].main;
       console.log(keyWord);
 
       // Using main weather term to search for a gif
-      let gifEndpoint = `https://api.giphy.com/v1/gifs/translate?api_key=lutoU47bgWimQRM7XenOl702O4MDlPGG&s=${keyWord}&weirdness:10`;
+      let gifEndpoint = `https://api.giphy.com/v1/gifs/translate?api_key=lutoU47bgWimQRM7XenOl702O4MDlPGG&weirdness=10&s=${keyWord}`;
       $.ajax({ url: gifEndpoint }).then(console.log(gifEndpoint));
+
+      /////////////
+      // WEATHER//
+      ///////////
+
       // convert Kelvin to Farenheit
       const tempConversion = () => {
         let tempF = Math.round(((tempK - 273.15) * 9) / 5 + 32);
