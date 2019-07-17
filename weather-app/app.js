@@ -5,6 +5,7 @@ $(() => {
   $('form').on('click', '#submit', event => {
     event.preventDefault();
     $('#forecast').empty();
+    $('#gif').empty();
     let $zip = $('#zip-code');
     let zipCode = $zip.val();
     let endpoint = `http://api.openweathermap.org/data/2.5/weather?zip=${zipCode}&APPID=27191dbc29ccfde300356183b803d41f`;
@@ -14,12 +15,22 @@ $(() => {
       let tempK = data.main.temp;
 
       // GIF searchword
-      let keyWord = data.weather[0].main;
-      console.log(keyWord);
+      let keyword = data.weather[0].main;
+      console.log(keyword);
 
       // Using main weather term to search for a gif
-      let gifEndpoint = `https://api.giphy.com/v1/gifs/translate?api_key=lutoU47bgWimQRM7XenOl702O4MDlPGG&weirdness=10&s=${keyWord}`;
-      $.ajax({ url: gifEndpoint }).then(console.log(gifEndpoint));
+      let gifEndpoint = `https://api.giphy.com/v1/gifs/translate?api_key=lutoU47bgWimQRM7XenOl702O4MDlPGG&weirdness=10&s=${keyword}`;
+      // let gifEndpoint = `https://api.giphy.com/v1/gifs/search?api_key=lutoU47bgWimQRM7XenOl702O4MDlPGG&q=${keyword}&limit=25&offset=0&rating=R&lang=en`;
+      console.log(gifEndpoint);
+      $.ajax({ url: gifEndpoint }).then(gifData => {
+        // let gifImg = gifData[0].images.fixed_height_downsampled.url;
+        // data[0].images.fixed_height_downsampled.url
+        let gifImg = gifData.data.images.fixed_height_downsampled.url;
+        console.log(gifImg);
+        // console.log(gifData);
+        let $gifDiv = $(`<img src=${gifImg}>`);
+        $('#gif').append($gifDiv);
+      });
 
       /////////////
       // WEATHER//
