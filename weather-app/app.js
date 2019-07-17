@@ -13,7 +13,7 @@ $(() => {
     $.ajax({ url: endpoint }).then(data => {
       let weatherConditions = data.weather[0];
       let tempK = data.main.temp;
-
+      console.log(endpoint);
       // GIF searchword
       let keyword = data.weather[0].main;
       console.log(keyword);
