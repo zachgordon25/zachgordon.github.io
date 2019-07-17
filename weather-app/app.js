@@ -23,8 +23,9 @@ $(() => {
       // let gifEndpoint = `https://api.giphy.com/v1/gifs/search?api_key=lutoU47bgWimQRM7XenOl702O4MDlPGG&q=${keyword}&limit=25&offset=0&rating=R&lang=en`;
       console.log(gifEndpoint);
       $.ajax({ url: gifEndpoint }).then(gifData => {
-        // let gifImg = gifData[0].images.fixed_height_downsampled.url;
-        // data[0].images.fixed_height_downsampled.url
+        // let gifImg = gifData.data[0].images.fixed_height_downsampled.url;
+
+        // gif link location in JSON file
         let gifImg = gifData.data.images.fixed_height_downsampled.url;
         console.log(gifImg);
         // console.log(gifData);
