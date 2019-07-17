@@ -25,3 +25,11 @@ header h1 {
   border-radius: 5px;
   height: 20px;
 }
+
+form {
+  display: flex;
+}
+
+#inputs {
+  justify-content: center;
+}
