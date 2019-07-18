@@ -72,11 +72,11 @@ $(() => {
           'Clear',
           'Rain',
           'Clouds',
-          'Haze',
           'Hail',
-          'Mist'
+          'Haze',
+          'Mist',
+          'Thunderstorm'
         ];
-
         if (keyword === weatherWords[0]) {
           $('body').attr('id', 'sunny');
         } else if (keyword === weatherWords[1]) {
@@ -85,6 +85,12 @@ $(() => {
           $('body').attr('id', 'cloud');
         } else if (keyword === weatherWords[3]) {
           $('body').attr('id', 'hail');
+        } else if (keyword === weatherWords[4]) {
+          $('body').attr('id', 'haze');
+        } else if (keyword === weatherWords[5]) {
+          $('body').attr('id', 'mist');
+        } else if (keyword === weatherWords[6]) {
+          $('body').attr('id', 'thunder');
         } else {
           $('body').attr('id', 'default');
         }
@@ -92,4 +98,22 @@ $(() => {
       tempConversion();
     });
   });
+  // Made variables for buttuns and modal
+  const $aboutBtn = $('#about');
+  const $close = $('#close');
+  const $modal = $('#modal');
+
+  // Modal shows
+  const open = () => {
+    $modal.css('display', 'block');
+  };
+
+  // Modal hides
+  const close = () => {
+    $modal.css('display', 'none');
+  };
+
+  // Click events
+  $aboutBtn.on('click', open);
+  $close.on('click', close);
 });
