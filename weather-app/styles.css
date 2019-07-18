@@ -2,12 +2,16 @@
   outline: 1px solid red;
 } */
 
+html {
+  margin: 0;
+}
+
 body {
   text-align: center;
   background-color: black;
   color: white;
   /* background-image: url('https://images.unsplash.com/photo-1485236715568-ddc5ee6ca227?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=933&q=80'); */
-  background-size: cover;
+  /* background-size: cover; */
 }
 
 #default {
@@ -19,7 +23,7 @@ body {
 #sunny {
   background-image: url('https://qph.fs.quoracdn.net/main-qimg-9a64ff13335e07af76c15338a5fc6d02');
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   background-position: center;
 }
 
@@ -27,14 +31,14 @@ body {
   background-image: url('https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');
   color: black;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   background-position: center;
 }
 
 #cloud {
   background-image: url('https://images.unsplash.com/uploads/14122598319144c6eac10/5f8e7ade?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2400&q=80');
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   background-position: center;
   /* background-attachment: fixed; */
   color: black;
@@ -43,19 +47,19 @@ body {
 #haze {
   background-image: url('https://images.unsplash.com/photo-1423209086112-cf2c8acd502f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80');
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
 }
 
 #hail {
   background-image: url('http://www.iii.org/insuranceindustryblog/wp-content/uploads/2018/08/iStock-hail-525029304.jpg');
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
 }
 
 #mist {
   background-image: url('https://images.unsplash.com/photo-1485236715568-ddc5ee6ca227?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=933&q=80');
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   color: black;
 }
 
@@ -96,15 +100,6 @@ h3 {
 #badge {
   height: 30px;
 }
-
-/* #gif {
-  margin-bottom: 0px;
-  size: 6000px;
-} */
-
-/* .search {
-  
-} */
 
 /* @keyframes color {
   0% {
