@@ -36,6 +36,14 @@ $(() => {
         );
         $('#gif').append($gifDiv);
         $('#gif').append($gifTag);
+
+        const weatherWords = ['Clear', 'Rain', 'Cloud', 'Haze', 'Hail', 'Mist'];
+
+        if (keyword === weatherWords[0]) {
+          $('body').attr('id', 'sunny');
+        } else {
+          $('body').attr('id', 'default');
+        }
       });
 
       /////////////
