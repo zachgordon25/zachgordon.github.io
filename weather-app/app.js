@@ -36,14 +36,6 @@ $(() => {
         );
         $('#gif').append($gifDiv);
         $('#gif').append($gifTag);
-
-        const weatherWords = ['Clear', 'Rain', 'Cloud', 'Haze', 'Hail', 'Mist'];
-
-        if (keyword === weatherWords[0]) {
-          $('body').attr('id', 'sunny');
-        } else {
-          $('body').attr('id', 'default');
-        }
       });
 
       /////////////
@@ -74,6 +66,28 @@ $(() => {
         );
         $('#forecast').append($conditions);
         // console.log($city);
+
+        // Setting up different backgrounds for each weather condition
+        const weatherWords = [
+          'Clear',
+          'Rain',
+          'Clouds',
+          'Haze',
+          'Hail',
+          'Mist'
+        ];
+
+        if (keyword === weatherWords[0]) {
+          $('body').attr('id', 'sunny');
+        } else if (keyword === weatherWords[1]) {
+          $('body').attr('id', 'rain');
+        } else if (keyword === weatherWords[2]) {
+          $('body').attr('id', 'cloud');
+        } else if (keyword === weatherWords[3]) {
+          $('body').attr('id', 'hail');
+        } else {
+          $('body').attr('id', 'default');
+        }
       };
       tempConversion();
     });

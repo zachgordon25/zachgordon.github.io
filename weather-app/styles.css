@@ -1,11 +1,13 @@
 /* * {
-  outline: 1px solid black;
+  outline: 1px solid red;
 } */
 
 body {
   text-align: center;
   background-color: black;
   color: white;
+  /* background-image: url('https://images.unsplash.com/photo-1485236715568-ddc5ee6ca227?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=933&q=80'); */
+  background-size: cover;
 }
 
 #default {
@@ -20,21 +22,63 @@ body {
   background-size: cover;
 }
 
+#rain {
+  background-image: url('https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');
+  color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#cloud {
+  background-image: url('https://images.unsplash.com/uploads/14122598319144c6eac10/5f8e7ade?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2400&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+}
+
+#haze {
+  background-image: url('https://images.unsplash.com/photo-1423209086112-cf2c8acd502f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#hail {
+  background-image: url('http://www.iii.org/insuranceindustryblog/wp-content/uploads/2018/08/iStock-hail-525029304.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#mist {
+  background-image: url('https://images.unsplash.com/photo-1485236715568-ddc5ee6ca227?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=933&q=80');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+}
+
 h1 {
   text-align: center;
 }
 
-/* form {
+.inputs {
   display: flex;
-} */
+  height: calc(100% - 446px);
+  justify-content: center;
+}
 
-/* .zipInputs {
-  display: flex;
-} */
+#zip-code {
+  display: inline;
+  border: 1px solid white;
+  border-right: none;
+  border-radius: 4px 0px 0px 4px;
+}
 
-/* #submit {
-  justify-content: right;
-} */
+#submit {
+  display: inline;
+  border-radius: 0px 4px 4px 0px;
+  border: 1px solid white;
+  border-left: none;
+  background-color: gray;
+}
 
 #badge {
   height: 30px;
