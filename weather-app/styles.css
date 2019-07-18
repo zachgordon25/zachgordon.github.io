@@ -93,10 +93,9 @@ h3 {
   height: 30px;
 }
 
-/* #gif {
-  height: 300px;
-  width: auto;
-} */
+#gif {
+  margin-bottom: 0px;
+}
 
 /* @keyframes color {
   0% {
