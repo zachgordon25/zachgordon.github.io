@@ -14,12 +14,13 @@ $(() => {
       let weatherConditions = data.weather[0];
       let tempK = data.main.temp;
       console.log(endpoint);
+
       // GIF searchword
       let keyword = data.weather[0].main;
-      console.log(keyword);
+      console.log(`%c ${keyword}`, 'color: red');
 
       // Using main weather term to search for a gif
-      let gifEndpoint = `https://api.giphy.com/v1/gifs/translate?api_key=lutoU47bgWimQRM7XenOl702O4MDlPGG&weirdness=10&s=${keyword}`;
+      let gifEndpoint = `https://api.giphy.com/v1/gifs/translate?api_key=lutoU47bgWimQRM7XenOl702O4MDlPGG&s=${keyword}`;
       // let gifEndpoint = `https://api.giphy.com/v1/gifs/search?api_key=lutoU47bgWimQRM7XenOl702O4MDlPGG&q=${keyword}&limit=25&offset=0&rating=R&lang=en`;
       console.log(gifEndpoint);
       $.ajax({ url: gifEndpoint }).then(gifData => {
@@ -30,7 +31,11 @@ $(() => {
         console.log(gifImg);
         // console.log(gifData);
         let $gifDiv = $(`<img src=${gifImg}>`);
+        let $gifTag = $(
+          '<img id="badge" src="img/Poweredby_100px-White_VertLogo.png" />'
+        );
         $('#gif').append($gifDiv);
+        $('#gif').append($gifTag);
       });
 
       /////////////
