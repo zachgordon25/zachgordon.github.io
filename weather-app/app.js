@@ -58,7 +58,7 @@ $(() => {
         const $city = $('<h2>').text(weatherConditions.name);
         $('#forecast').append($city);
         const $temp = $('<h3>').text(
-          `Current temp: ${weatherConditions.temp}°F`
+          `Current temperature: ${weatherConditions.temp}°F`
         );
         $('#forecast').append($temp);
         const $conditions = $('<h3>').text(

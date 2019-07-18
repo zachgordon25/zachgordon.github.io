@@ -19,39 +19,43 @@ body {
 #sunny {
   background-image: url('https://qph.fs.quoracdn.net/main-qimg-9a64ff13335e07af76c15338a5fc6d02');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
+  background-position: center;
 }
 
 #rain {
   background-image: url('https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');
   color: black;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
+  background-position: center;
 }
 
 #cloud {
   background-image: url('https://images.unsplash.com/uploads/14122598319144c6eac10/5f8e7ade?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2400&q=80');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
+  background-position: center;
+  /* background-attachment: fixed; */
   color: black;
 }
 
 #haze {
   background-image: url('https://images.unsplash.com/photo-1423209086112-cf2c8acd502f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
 }
 
 #hail {
   background-image: url('http://www.iii.org/insuranceindustryblog/wp-content/uploads/2018/08/iStock-hail-525029304.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
 }
 
 #mist {
   background-image: url('https://images.unsplash.com/photo-1485236715568-ddc5ee6ca227?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=933&q=80');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   color: black;
 }
 
@@ -76,7 +80,7 @@ h3 {
 
 #zip-code {
   display: inline;
-  border: 1px solid white;
+  border: 1px solid rgb(233, 240, 253);
   border-right: none;
   border-radius: 4px 0px 0px 4px;
 }
@@ -84,7 +88,7 @@ h3 {
 #submit {
   display: inline;
   border-radius: 0px 4px 4px 0px;
-  border: 1px solid white;
+  border: 1px solid gray;
   border-left: none;
   background-color: gray;
 }
@@ -93,9 +97,14 @@ h3 {
   height: 30px;
 }
 
-#gif {
+/* #gif {
   margin-bottom: 0px;
-}
+  size: 6000px;
+} */
+
+/* .search {
+  
+} */
 
 /* @keyframes color {
   0% {
