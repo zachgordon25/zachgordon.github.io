@@ -1,7 +1,4 @@
 $(() => {
-  // let date = new Date();
-  // console.log(date);
-
   $('form').on('click', '#submit', event => {
     event.preventDefault();
     $('#forecast').empty();
@@ -21,11 +18,8 @@ $(() => {
 
       // Using main weather term to search for a gif
       let gifEndpoint = `https://api.giphy.com/v1/gifs/translate?api_key=lutoU47bgWimQRM7XenOl702O4MDlPGG&s=${keyword}`;
-      // let gifEndpoint = `https://api.giphy.com/v1/gifs/search?api_key=lutoU47bgWimQRM7XenOl702O4MDlPGG&q=${keyword}&limit=25&offset=0&rating=R&lang=en`;
       console.log(`%c ${gifEndpoint}`, 'color: yellow');
       $.ajax({ url: gifEndpoint }).then(gifData => {
-        // let gifImg = gifData.data[0].images.fixed_height_downsampled.url;
-
         // gif link location in JSON file
         let gifImg = gifData.data.images.fixed_height_downsampled.url;
         console.log(`%c ${gifImg}`, 'color: blue');
@@ -54,7 +48,6 @@ $(() => {
         console.log(weatherConditions);
 
         // append information to body
-        // $('#forecast').append(date);
         const $city = $('<h2>').text(weatherConditions.name);
         $('#forecast').append($city);
         const $temp = $('<h3>').text(
@@ -65,8 +58,6 @@ $(() => {
           `Current condition: ${weatherConditions.description}`
         );
         $('#forecast').append($conditions);
-        // console.log($city);
-
         // Setting up different backgrounds for each weather condition
         const weatherWords = [
           'Clear',
@@ -98,6 +89,7 @@ $(() => {
       tempConversion();
     });
   });
+
   // Made variables for buttuns and modal
   const $aboutBtn = $('#about');
   const $close = $('#close');
