@@ -14,7 +14,7 @@ $(() => {
     // Everything after this happens after zipcode input
     let $zipBar = $('#zip-bar');
     let zipCode = $zipBar.val();
-    let weatherEndpoint = `http://api.openweathermap.org/data/2.5/weather?zip=${zipCode}&APPID=27191dbc29ccfde300356183b803d41f`;
+    let weatherEndpoint = `https://api.openweathermap.org/data/2.5/weather?zip=${zipCode}&APPID=27191dbc29ccfde300356183b803d41f`;
     $.ajax({ url: weatherEndpoint }).then(data => {
       let weatherConditions = data.weather[0];
       let tempK = data.main.temp;
