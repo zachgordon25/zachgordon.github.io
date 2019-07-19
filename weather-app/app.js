@@ -3,7 +3,7 @@ $(() => {
     event.preventDefault();
     $('#forecast').empty();
     $('#gif').empty();
-    $('#hard-g').hide();
+    $('#g').hide();
     let $zip = $('#zip-code');
     let zipCode = $zip.val();
     let weatherEndpoint = `http://api.openweathermap.org/data/2.5/weather?zip=${zipCode}&APPID=27191dbc29ccfde300356183b803d41f`;
@@ -67,7 +67,8 @@ $(() => {
           'Hail',
           'Haze',
           'Mist',
-          'Thunderstorm'
+          'Thunderstorm',
+          'Drizzle'
         ];
         if (keyword === weatherWords[0]) {
           $('body').attr('id', 'sunny');
