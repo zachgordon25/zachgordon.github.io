@@ -109,7 +109,7 @@ $(() => {
   ////////
 
   // Made variables for buttons and modal
-  const $aboutBtn = $('#about');
+  const $aboutBtn = $('#about-button');
   const $close = $('#close-modal');
   const $modal = $('#about-modal');
 

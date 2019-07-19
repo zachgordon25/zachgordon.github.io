@@ -1,9 +1,9 @@
 # giforecast
 
-- API from openweathermap.org to access weather data from various zip codes in the US.
+https://zachgordon25.github.io/weather-app
 
-- API from giphy to tie a gif to the current weather
+giforecast is a weather app that uses the weather report to get a fitting gif. I used two APIs two make this possible. I grabbed the weather data from openweathermap.org and the gifs from giphy.com. I started out this project with just making it a weather app but then later decided that I wanted to give it a little more flavor. My biggest struggle while doing this project was doing the formatting and styling. If I had more time to do this project I would work more on animations and more css.
 
-- Initially started with just the weather but wanted to build more
-
-- https://zachgordon25.github.io/weather-app
+![home page](img/home.png)
+![sunny](img/sunny.png)
+![cloudy](img/cloudy.png)
