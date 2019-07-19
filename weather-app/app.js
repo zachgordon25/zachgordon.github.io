@@ -7,7 +7,6 @@ $(() => {
     let $zip = $('#zip-code');
     let zipCode = $zip.val();
     let weatherEndpoint = `http://api.openweathermap.org/data/2.5/weather?zip=${zipCode}&APPID=27191dbc29ccfde300356183b803d41f`;
-
     $.ajax({ url: weatherEndpoint }).then(data => {
       let weatherConditions = data.weather[0];
       let tempK = data.main.temp;
@@ -82,6 +81,7 @@ $(() => {
           $('body').attr('id', 'haze');
         } else if (keyword === weatherWords[5]) {
           $('body').attr('id', 'mist');
+          $('h1').attr('id', 'mist-h1');
         } else if (keyword === weatherWords[6]) {
           $('body').attr('id', 'thunder');
         } else if (keyword === weatherWords[7]) {
