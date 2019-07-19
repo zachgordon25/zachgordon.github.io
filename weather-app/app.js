@@ -1,9 +1,17 @@
 $(() => {
   $('form').on('click', '#submit', event => {
+    // Prevent auto refresh
     event.preventDefault();
+
+    // Reset forecast and gif
     $('#forecast').empty();
     $('#gif').empty();
+
+    //  remove initial gif and tag
     $('#g').hide();
+    $('#first-tag').hide();
+
+    // Everything after this happens after zipcode input
     let $zip = $('#zip-code');
     let zipCode = $zip.val();
     let weatherEndpoint = `http://api.openweathermap.org/data/2.5/weather?zip=${zipCode}&APPID=27191dbc29ccfde300356183b803d41f`;
@@ -58,6 +66,7 @@ $(() => {
           `Current condition: ${weatherConditions.description}`
         );
         $('#forecast').append($conditions);
+
         // Setting up different backgrounds for each weather condition
         const weatherWords = [
           'Clear',
