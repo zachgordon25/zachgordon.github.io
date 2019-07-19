@@ -6,10 +6,9 @@ $(() => {
     // Reset forecast and gif
     $('#forecast').empty();
     $('#gif').empty();
-
+    $('body').append($('#gif-tag'));
     //  remove initial gif and tag
     $('#pronounce').hide();
-    $('#first-tag').hide();
 
     // Everything after this happens after zipcode input
     let $zipBar = $('#zip-bar');
