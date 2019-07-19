@@ -94,10 +94,10 @@ $(() => {
     });
   });
 
-  // Made variables for buttuns and modal
+  // Made variables for buttons and modal
   const $aboutBtn = $('#about');
   const $close = $('#close');
-  const $modal = $('#modal');
+  const $modal = $('#about-modal');
 
   // Modal shows
   const open = () => {
