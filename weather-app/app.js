@@ -20,6 +20,10 @@ $(() => {
       let tempK = data.main.temp;
       console.log(weatherEndpoint);
 
+      ////////
+      //GIF//
+      //////
+
       // GIF searchword
       let keyword = data.weather[0].main;
       console.log(`%c ${keyword}`, 'color: red');
@@ -99,6 +103,10 @@ $(() => {
       tempConversion();
     });
   });
+
+  //////////
+  //MODAL//
+  ////////
 
   // Made variables for buttons and modal
   const $aboutBtn = $('#about');
