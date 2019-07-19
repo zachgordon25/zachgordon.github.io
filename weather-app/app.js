@@ -8,12 +8,12 @@ $(() => {
     $('#gif').empty();
 
     //  remove initial gif and tag
-    $('#g').hide();
+    $('#pronounce').hide();
     $('#first-tag').hide();
 
     // Everything after this happens after zipcode input
-    let $zip = $('#zip-code');
-    let zipCode = $zip.val();
+    let $zipBar = $('#zip-bar');
+    let zipCode = $zipBar.val();
     let weatherEndpoint = `http://api.openweathermap.org/data/2.5/weather?zip=${zipCode}&APPID=27191dbc29ccfde300356183b803d41f`;
     $.ajax({ url: weatherEndpoint }).then(data => {
       let weatherConditions = data.weather[0];
@@ -33,11 +33,8 @@ $(() => {
         console.log(gifImg);
         // console.log(gifData);
         let $gifDiv = $(`<img src=${gifImg}>`).attr('id', 'gif');
-        let $gifTag = $(
-          '<img id="badge" src="img/Poweredby_100px-White_VertLogo.png" />'
-        );
         $('#gif').append($gifDiv);
-        $('#gif').append($gifTag);
+        $('#gif').append($('#gif-tag'));
       });
 
       /////////////

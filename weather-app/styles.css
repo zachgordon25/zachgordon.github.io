@@ -97,7 +97,7 @@ h3 {
   justify-content: center;
 }
 
-#zip-code {
+#zip-bar {
   display: inline;
   border: 1px solid rgb(233, 240, 253);
   border-right: none;
@@ -179,6 +179,6 @@ p {
   text-decoration: none;
 }
 
-#g {
+#pronounce {
   margin-top: 100px;
 }
