@@ -6,4 +6,4 @@
 
 - Initially started with just the weather but wanted to build more
 
-- https://zachgordon25.github.io/weather-app
+- https://zachgordon25.github.io/weather-app/
