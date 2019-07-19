@@ -18,7 +18,6 @@ $(() => {
     $.ajax({ url: weatherEndpoint }).then(data => {
       let weatherConditions = data.weather[0];
       let tempK = data.main.temp;
-      console.log(weatherEndpoint);
 
       ////////
       //GIF//
@@ -26,16 +25,13 @@ $(() => {
 
       // GIF searchword
       let keyword = data.weather[0].main;
-      console.log(`%c ${keyword}`, 'color: red');
 
       // Using main weather term to search for a gif
       let gifEndpoint = `https://api.giphy.com/v1/gifs/translate?api_key=lutoU47bgWimQRM7XenOl702O4MDlPGG&s=${keyword}`;
-      console.log(gifEndpoint);
+
       $.ajax({ url: gifEndpoint }).then(gifData => {
         // gif link location in JSON file
         let gifImg = gifData.data.images.fixed_height_downsampled.url;
-        console.log(gifImg);
-        // console.log(gifData);
         let $gifDiv = $(`<img src=${gifImg}>`).attr('id', 'gif');
         $('#gif').append($gifDiv);
         $('#gif').append($('#gif-tag'));
@@ -54,7 +50,6 @@ $(() => {
         weatherConditions.name = data.name;
         delete weatherConditions.icon;
         delete weatherConditions.id;
-        console.log(weatherConditions);
 
         // append information to body
         const $city = $('<h2>').text(weatherConditions.name);
