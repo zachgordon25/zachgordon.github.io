@@ -34,7 +34,6 @@ $(() => {
         let gifImg = gifData.data.images.fixed_height_downsampled.url;
         let $gifDiv = $(`<img src=${gifImg}>`).attr('id', 'gif');
         $('#gif').append($gifDiv);
-        $('#gif').append($('#gif-tag'));
       });
 
       /////////////
