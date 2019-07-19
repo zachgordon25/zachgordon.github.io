@@ -151,6 +151,10 @@ p {
   text-decoration: none;
 }
 
+#hard-g {
+  margin-top: 100px;
+}
+
 /* #gif img {
   transition: 1s ease-in-out;
 }
