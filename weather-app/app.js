@@ -84,6 +84,8 @@ $(() => {
           $('body').attr('id', 'mist');
         } else if (keyword === weatherWords[6]) {
           $('body').attr('id', 'thunder');
+        } else if (keyword === weatherWords[7]) {
+          $('body').attr('id', 'drizzle');
         } else {
           $('body').attr('id', 'default');
         }
