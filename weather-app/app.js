@@ -67,7 +67,7 @@ $(() => {
         );
         $('#forecast').append($conditions);
 
-        // Setting up different backgrounds for each weather condition
+        // Setting up different css properties for each weather condition
         const weatherWords = [
           'Clear',
           'Rain',
