@@ -1,4 +1,4 @@
-# giforecast (working name)
+# giforecast
 
 - API from openweathermap.org to access weather data from various zip codes in the US.
 
