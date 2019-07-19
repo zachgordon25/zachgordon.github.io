@@ -164,6 +164,10 @@ p {
   /* border: none; */
 }
 
+p {
+  font-weight: 300;
+}
+
 #close {
   color: black;
   text-decoration: none;
