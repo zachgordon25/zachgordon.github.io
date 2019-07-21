@@ -172,3 +172,15 @@ h3 {
 #pronounce {
   margin-top: 100px;
 }
+
+@media (max-width: 300px) {
+  body {
+    background-position: fixed;
+    background-position: center;
+  }
+
+  #textbox {
+    width: 30px;
+    word-wrap: wrap;
+  }
+}
