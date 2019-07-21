@@ -120,3 +120,4 @@ $(() => {
   $aboutBtn.on('click', open);
   $close.on('click', close);
 });
+7;
