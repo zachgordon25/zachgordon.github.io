@@ -26,7 +26,7 @@ $(() => {
       let keyword = data.weather[0].main;
       console.log(keyword);
       // Using main weather term to search for a gif
-      let gifEndpoint = `https://api.giphy.com/v1/gifs/translate?api_key=lutoU47bgWimQRM7XenOl702O4MDlPGG&s=weather-${keyword}`;
+      let gifEndpoint = `https://api.giphy.com/v1/gifs/translate?api_key=lutoU47bgWimQRM7XenOl702O4MDlPGG&s=${keyword}`;
 
       $.ajax({ url: gifEndpoint }).then(gifData => {
         // gif link location in JSON file
