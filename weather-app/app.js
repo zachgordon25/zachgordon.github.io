@@ -24,7 +24,7 @@ $(() => {
 
       // GIF searchword
       let keyword = data.weather[0].main;
-
+      console.log(keyword);
       // Using main weather term to search for a gif
       let gifEndpoint = `https://api.giphy.com/v1/gifs/translate?api_key=lutoU47bgWimQRM7XenOl702O4MDlPGG&s=${keyword}`;
 
@@ -70,7 +70,8 @@ $(() => {
           'Haze',
           'Mist',
           'Thunderstorm',
-          'Drizzle'
+          'Drizzle',
+          'Smoke'
         ];
         if (keyword === weatherWords[0]) {
           $('body').attr('id', 'sunny');
@@ -89,6 +90,8 @@ $(() => {
           $('body').attr('id', 'thunder');
         } else if (keyword === weatherWords[7]) {
           $('body').attr('id', 'drizzle');
+        } else if (keyword === weatherWords[8]) {
+          $('body').attr('id', 'smoke');
         } else {
           $('body').attr('id', 'default');
         }
