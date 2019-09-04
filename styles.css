@@ -5,3 +5,13 @@
   height: 250px;
   width: 160px;
 }
+
+.project-img {
+  height: 300px;
+}
+
+header {
+  background: url('https://www.sciencenewsforstudents.org/sites/default/files/scald-image/1180_CCC_ocean_acidification_rev.png');
+  background-size: 100%;
+  text-align: center;
+}

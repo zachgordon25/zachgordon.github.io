@@ -24,96 +24,133 @@
     <script src="app.js"></script>
     <title>Zach Gordon</title>
   </head>
+
   <body>
     <header>
       <img id="headshot" src="./assets/images/zach.jpeg" alt="Zach" />
       <h1>Zach Gordon</h1>
       <nav class="nav justify-content-center">
         <button class="nav-item" id="about-button">About Me</button>
-        <button class="nav-item" id="projects-button">My Projects</button>
+        <a href="#projects"
+          ><button class="nav-item" id="projects-button">
+            My Projects
+          </button></a
+        >
         <button class="nav-item" id="contact-button">Contact Me</button>
       </nav>
     </header>
-    <article id="about-me">
-      <h2>About Me</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-        minima iusto delectus?
-      </p>
-      <p>Quod excepturi delectus in sint numquam</p>
-      <p>
-        architecto ut, magnam fugit, eligendi atque necessitatibus alias debitis
-        blanditiis voluptatum a.
-      </p>
-    </article>
-
-    <article id="projects">
-      <h2>My Projects</h2>
-      <section>
-        <h3>giforecast</h3>
-
-        <img src="./assets/images/sunny.png" alt="giforecast" />
+    <div class="container">
+      <article id="about-me">
+        <h2>About Me</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
-          cupiditate itaque? Vero maiores a minus ad nihil numquam architecto
-          iste sed expedita, pariatur itaque nam repellendus tenetur odio eaque
-          consequuntur.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+          minima iusto delectus?
         </p>
-        <h4>Technologies I Used</h4>
+        <p>Quod excepturi delectus in sint numquam</p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime iusto
-          iste a saepe accusantium eum quas consectetur dicta! Mollitia
-          asperiores in aut tenetur maxime excepturi blanditiis minima dolores
-          rerum nobis.
+          architecto ut, magnam fugit, eligendi atque necessitatibus alias
+          debitis blanditiis voluptatum a.
         </p>
-        <a href="https://zachgordon25.github.io/weather-app/">See App</a>
-        <a
-          href="https://github.com/zachgordon25/zachgordon25.github.io/tree/master/weather-app"
-          >See the Code</a
-        >
-      </section>
+      </article>
 
-      <section>
-        <h3>Zach's Fish House</h3>
+      <article id="projects">
+        <h2>My Projects</h2>
 
-        <img src="./assets/images/zfh.png" alt="Zach's Fish House" />
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
-          asperiores exercitationem ad dolorum, iste unde cupiditate, maiores
-          neque quidem autem soluta excepturi eius numquam ea consectetur
-          impedit doloremque placeat porro!
-        </p>
-        <h4>Technologies I Used</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-          blanditiis sint vero, dolore, dicta consequuntur dolorum sunt esse
-          soluta, velit aut. Rem dolor illum, amet aut id doloribus dignissimos
-          voluptas.
-        </p>
-        <a href="https://zachs-fish-house.herokuapp.com/fish">See App</a>
-        <a href="https://github.com/zachgordon25/zfh">See the Code</a>
-      </section>
+        <!-- GIFORECAST -->
+        <section>
+          <h3>giforecast</h3>
 
-      <section>
-        <h3>RUMBLE</h3>
+          <img
+            class="project-img"
+            src="./assets/images/sunny.png"
+            alt="giforecast"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+            cupiditate itaque? Vero maiores a minus ad nihil numquam architecto
+            iste sed expedita, pariatur itaque nam repellendus tenetur odio
+            eaque consequuntur.
+          </p>
+          <h4>Technologies I Used</h4>
+          <p>
+            HTML, CSS, JavaScript, jQuery, AJAX
+          </p>
+          <a href="https://zachgordon25.github.io/weather-app/"
+            ><button type="button" class="btn btn-danger">
+              See the App
+            </button></a
+          >
+          <a
+            href="https://github.com/zachgordon25/zachgordon25.github.io/tree/master/weather-app"
+            ><button type="button" class="btn btn-secondary">
+              See the Code
+            </button></a
+          >
+        </section>
 
-        <img src="./assets/images/rumble.png" alt="RUMBLE" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-          voluptatum magnam facere minima voluptas provident, similique at
-          cumque quae quia optio ipsum aliquid expedita ut quibusdam eos
-          voluptatem. Maiores, odio!
-        </p>
-        <h4>Technologies I Used</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-          consequuntur reiciendis voluptatem dolores culpa, possimus quaerat
-          illo iure amet ex alias voluptate cum voluptas dolorem impedit,
-          asperiores accusamus a neque!
-        </p>
-        <a href="http://squealing-flavor.surge.sh/">See App</a>
-        <a href="https://github.com/zachgordon25/bfc">See the Code</a>
-      </section>
-    </article>
+        <!-- ZFH -->
+        <section>
+          <h3>Zach's Fish House</h3>
+
+          <img
+            class="project-img"
+            src="./assets/images/zfh.png"
+            alt="Zach's Fish House"
+          />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
+            asperiores exercitationem ad dolorum, iste unde cupiditate, maiores
+            neque quidem autem soluta excepturi eius numquam ea consectetur
+            impedit doloremque placeat porro!
+          </p>
+          <h4>Technologies I Used</h4>
+          <p>
+            JavaScript, CSS, ejs, MongoDB, Mongoose, Semantic UI, Bootstrap,
+            bcrypt
+          </p>
+          <a href="https://zachs-fish-house.herokuapp.com/fish"
+            ><button type="button" class="btn btn-danger">
+              See the App
+            </button></a
+          >
+          <a href="https://github.com/zachgordon25/zfh"
+            ><button type="button" class="btn btn-secondary">
+              See the Code
+            </button></a
+          >
+        </section>
+
+        <!-- RUMBLE -->
+        <section>
+          <h3>RUMBLE</h3>
+
+          <img
+            class="project-img"
+            src="./assets/images/rumble.png"
+            alt="RUMBLE"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+            voluptatum magnam facere minima voluptas provident, similique at
+            cumque quae quia optio ipsum aliquid expedita ut quibusdam eos
+            voluptatem. Maiores, odio!
+          </p>
+          <h4>Technologies I Used</h4>
+          <p>
+            React, JSX, CSS, Express, MongoDB, Bootstrap, bcrypt
+          </p>
+          <a href="http://squealing-flavor.surge.sh/"
+            ><button type="button" class="btn btn-danger">
+              See the App
+            </button></a
+          >
+          <a href="https://github.com/zachgordon25/bfc"
+            ><button type="button" class="btn btn-secondary">
+              See the Code
+            </button></a
+          >
+        </section>
+      </article>
+    </div>
   </body>
 </html>
