@@ -19,3 +19,45 @@ header {
   text-align: center;
   color: black;
 }
+
+#contact-modal {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  overflow: auto;
+  display: none;
+}
+
+#textbox {
+  background-color: black;
+  color: white;
+  height: 200px;
+  width: 550px;
+  border-radius: 2px;
+  margin: 150px auto;
+}
+
+#modal-text {
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#contact-header {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 10px;
+}
+
+/* #contact-button {
+  margin-top: 10px;
+  padding: 10px 40px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: white;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+} */
