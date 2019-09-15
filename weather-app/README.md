@@ -1,5 +1,5 @@
-# zachgordon25.github.io
+# giforecast
 
-## GA Projects
+https://zachgordon25.github.io/weather-app/
 
-https://github.com/zachgordon25/zachgordon25.github.io/tree/master/weather-app
+Giforecast is a web application that allows users to put in a zip code and get the current forecast using the and a corresponding gif.
