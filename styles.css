@@ -18,7 +18,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  color: black;
+  color: #fff;
 }
 
 #contact-modal {
@@ -43,7 +43,7 @@ header {
   color: #000;
   height: 200px;
   width: 550px;
-  border-radius: 2px;
+  border-radius: 8px;
   margin: 15% auto;
 }
 
