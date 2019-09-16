@@ -33,23 +33,23 @@ header {
   display: none;
 }
 
+#contact-header {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 10px;
+}
+
 #textbox {
   background-color: #fff;
   color: #000;
   height: 200px;
   width: 550px;
   border-radius: 2px;
-  margin: 150px auto;
+  margin: 15% auto;
 }
 
 #modal-text {
   padding: 20px;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-#contact-header {
-  font-family: Arial, Helvetica, sans-serif;
-  padding-top: 10px;
 }
 
 a,
@@ -75,7 +75,7 @@ a:hover {
   color: black;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   #contact-header {
     font-size: 28px;
   }
