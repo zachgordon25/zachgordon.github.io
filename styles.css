@@ -7,7 +7,8 @@
 }
 
 .project-img {
-  height: 300px;
+  width: 100%;
+  height: auto;
 }
 
 header {
@@ -72,4 +73,14 @@ a:hover {
 
 .fa-github {
   color: black;
+}
+
+@media (max-width: 600px) {
+  #contact-header {
+    font-size: 28px;
+  }
+
+  #modal-text {
+    padding: 5px;
+  }
 }
