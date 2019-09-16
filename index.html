@@ -37,19 +37,25 @@
       <img id="headshot" src="./assets/images/zach.jpeg" alt="Zach" />
       <h1>Zach Gordon</h1>
       <nav class="nav justify-content-center">
-        <button class="nav-item" id="about-button">About Me</button>
-        <a href="#projects"
-          ><button class="nav-item" id="projects-button">
-            My Projects
-          </button></a
-        >
         <button class="nav-item" id="contact-button">Contact Me</button>
+
+        <a href="#projects">
+          <button class="nav-item" id="projects-button">My Projects</button>
+        </a>
+
+        <a href="#resume">
+          <button class="nav-item" id="resume-button">My Resume</button>
+        </a>
       </nav>
 
       <div id="contact-modal">
         <div id="textbox">
           <h3 id="contact-header">Contact Me</h3>
           <p id="modal-text">
+            <a href="tel:+18624387074">
+              <i class="fas fa-phone-square"></i>
+            </a>
+
             <a href="mailto:zachgordon25@gmail.com" target="_blank">
               <i class="fas fa-envelope-square"></i>
             </a>
@@ -189,6 +195,12 @@
           >
         </section>
       </article>
+
+      <article id="resume">
+        <h2>My Resume</h2>
+        <embed view="Fit" src="./assets/Zach_Gordon_Resume.pdf" />
+      </article>
+      <a href="#headshot" id="top">Top</a>
     </div>
   </body>
 </html>
