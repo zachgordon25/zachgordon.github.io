@@ -21,7 +21,6 @@ body {
 }
 
 header {
-  /* background: url('https://www.sciencenewsforstudents.org/sites/default/files/scald-image/1180_CCC_ocean_acidification_rev.png'); */
   background: url('https://cdn.mos.cms.futurecdn.net/sYGVH9XWiB85hzV22gBhpd-1200-80.jpg');
   height: 100%;
   background-position: center;
@@ -29,37 +28,6 @@ header {
   background-size: cover;
   text-align: center;
   color: #fff;
-}
-
-#contact-modal {
-  background-color: rgba(0, 0, 0, 0.4);
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  overflow: auto;
-  display: none;
-}
-
-#contact-header {
-  font-family: Arial, Helvetica, sans-serif;
-  padding-top: 10px;
-}
-
-#textbox {
-  background-color: #fff;
-  color: #000;
-  height: 200px;
-  width: 550px;
-  border-radius: 8px;
-  margin: 15% auto;
-}
-
-#modal-text {
-  padding: 20px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 a,
@@ -74,15 +42,15 @@ a:hover {
 }
 
 .fa-phone-square {
-  color: rgb(146, 198, 68);
+  color: #92c644;
 }
 
 .fa-envelope-square {
-  color: rgb(109, 11, 148);
+  color: #6d0b94;
 }
 
 .fa-linkedin {
-  color: rgb(51, 123, 246);
+  color: #337bf6;
 }
 
 .fa-github {
@@ -97,14 +65,4 @@ embed {
 
 #top {
   margin: 6px;
-}
-
-@media (max-width: 500px) {
-  #contact-header {
-    font-size: 28px;
-  }
-
-  #modal-text {
-    padding: 5px;
-  }
 }
