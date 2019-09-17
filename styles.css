@@ -7,9 +7,11 @@ body {
 }
 
 #headshot {
-  height: 250px;
-  width: 160px;
+  height: 300px;
+  width: 210px;
   margin-top: 10%;
+  border: 3px solid #777;
+  border-radius: 5px;
 }
 
 .project-img {
