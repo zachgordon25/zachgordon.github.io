@@ -1,9 +1,15 @@
+body {
+  background-color: #333;
+}
+
 .container {
   text-align: center;
 }
+
 #headshot {
   height: 250px;
   width: 160px;
+  margin-top: 10%;
 }
 
 .project-img {
@@ -12,7 +18,8 @@
 }
 
 header {
-  background: url('https://www.sciencenewsforstudents.org/sites/default/files/scald-image/1180_CCC_ocean_acidification_rev.png');
+  /* background: url('https://www.sciencenewsforstudents.org/sites/default/files/scald-image/1180_CCC_ocean_acidification_rev.png'); */
+  background: url('https://cdn.mos.cms.futurecdn.net/sYGVH9XWiB85hzV22gBhpd-1200-80.jpg');
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -76,7 +83,7 @@ a:hover {
 }
 
 .fa-github {
-  color: black;
+  color: #999;
 }
 
 embed {
