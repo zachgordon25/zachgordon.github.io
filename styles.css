@@ -74,3 +74,7 @@ section {
 .header {
   text-decoration: underline;
 }
+
+h3 {
+  margin-top: 10px;
+}
