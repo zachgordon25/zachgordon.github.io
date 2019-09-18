@@ -66,3 +66,11 @@ embed {
 #top {
   margin: 6px;
 }
+
+section {
+  margin-top: 50px;
+}
+
+.header {
+  text-decoration: underline;
+}
