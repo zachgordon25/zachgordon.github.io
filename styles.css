@@ -3,8 +3,8 @@ body {
 }
 
 #headshot {
-  height: 275px;
-  width: 185px;
+  height: 250px;
+  width: 160px;
   margin-top: 10%;
   border: 3px solid #777;
   border-radius: 5px;
@@ -73,8 +73,4 @@ section {
 
 .header {
   text-decoration: underline;
-}
-
-h3 {
-  margin-top: 10px;
 }
