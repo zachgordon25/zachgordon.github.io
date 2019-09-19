@@ -42,11 +42,6 @@ section {
   width: 100%;
 }
 
-.icymi-img {
-  max-height: 300px;
-  width: auto;
-}
-
 a,
 a:hover {
   text-decoration: none;
