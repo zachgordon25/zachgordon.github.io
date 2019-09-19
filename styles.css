@@ -2,9 +2,23 @@ body {
   background-color: #333;
 }
 
+header {
+  background: url('https://cdn.mos.cms.futurecdn.net/sYGVH9XWiB85hzV22gBhpd-1200-80.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+.header {
+  text-decoration: underline;
+}
+
 #headshot {
   height: 250px;
-  width: 160px;
+  width: auto;
   margin-top: 10%;
   border: 3px solid #777;
   border-radius: 5px;
@@ -15,19 +29,18 @@ body {
   color: #fff;
 }
 
-.project-img {
-  width: 100%;
-  height: auto;
+section {
+  display: flex;
+  margin-top: 50px;
 }
 
-header {
-  background: url('https://cdn.mos.cms.futurecdn.net/sYGVH9XWiB85hzV22gBhpd-1200-80.jpg');
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  color: #fff;
+.project-info {
+  margin-top: 50px;
+}
+
+.project-img {
+  height: 400px;
+  width: auto;
 }
 
 a,
@@ -57,28 +70,20 @@ a:hover {
   color: #999;
 }
 
+#resume {
+  margin-top: 50px;
+}
+
 embed {
   width: 100%;
   height: 500px;
   outline: 1px solid #fff;
 }
 
-#top {
-  margin: 6px;
-}
-
-section {
-  margin-top: 50px;
-}
-
-.header {
-  text-decoration: underline;
-}
-
 @media (min-width: 500px) {
   #headshot {
-    height: 275px;
-    width: 195px;
+    height: 300px;
+    width: auto;
     margin-top: 10%;
     border: 3px solid #777;
     border-radius: 5px;
