@@ -104,4 +104,9 @@ embed {
   .project-info {
     margin-top: 50px;
   }
+
+  #zfh-img {
+    height: 400px;
+    width: auto;
+  }
 }
