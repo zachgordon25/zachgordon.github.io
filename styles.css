@@ -30,7 +30,7 @@ header {
 }
 
 section {
-  display: flex;
+  /* display: flex; */
   margin-top: 50px;
 }
 
@@ -88,10 +88,21 @@ embed {
     border: 3px solid #777;
     border-radius: 5px;
   }
+
   p {
     font-size: 20px;
   }
+
   h3 {
     font-size: 25px;
+  }
+
+  section {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  .project-info {
+    margin-top: 50px;
   }
 }
