@@ -87,6 +87,10 @@ embed {
   font-style: italic;
 }
 
+#send {
+  margin-bottom: 20px;
+}
+
 @media (min-width: 500px) {
   #headshot {
     height: 300px;
@@ -120,7 +124,7 @@ embed {
 
   embed {
     width: 100%;
-    height: 500px;
+    height: 700px;
     outline: 1px solid #fff;
   }
 }

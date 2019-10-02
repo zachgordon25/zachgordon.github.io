@@ -75,6 +75,9 @@
             My Resume
           </button>
         </a>
+        <a href="#contact">
+          <button class="ui inverted violet basic button">Contact Me</button>
+        </a>
         <h2>This is what happens when you sell your car to a programmer...</h2>
       </nav>
     </header>
@@ -279,6 +282,42 @@
       <div id="resume">
         <h2 class="header">Resume</h2>
         <embed view="Fit" src="./assets/zachgordonresume.pdf" />
+      </div>
+      <br />
+
+      <div id="contact">
+        <h2 class="header">Contact Me</h2>
+        <form
+          class="ui form"
+          action="https://formspree.io/zach@zachsgordon.com"
+          method="POST"
+        >
+          <div class="field">
+            <input required type="text" name="name" placeholder="Your name" />
+          </div>
+          <div class="field">
+            <input
+              required
+              type="email"
+              name="_replyto"
+              placeholder="Your email"
+            />
+          </div>
+          <div class="field">
+            <textarea
+              required
+              name="message"
+              placeholder="Enter your message here"
+            ></textarea>
+          </div>
+          <button
+            id="send"
+            class="ui inverted green basic button"
+            type="submit"
+          >
+            Send
+          </button>
+        </form>
       </div>
     </div>
   </body>
