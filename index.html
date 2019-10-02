@@ -75,6 +75,9 @@
             My Resume
           </button>
         </a>
+        <a href="#contact">
+          <button class="ui inverted violet basic button">Contact Me</button>
+        </a>
         <h2>This is what happens when you sell your car to a programmer...</h2>
       </nav>
     </header>
@@ -280,35 +283,42 @@
         <h2 class="header">Resume</h2>
         <embed view="Fit" src="./assets/zachgordonresume.pdf" />
       </div>
+      <br />
 
-      <!-- <form
-        action="https://mailthis.to/zachgordon25@gmail.com"
-        method="POST"
-        encType="multipart/form-data"
-      >
-        <input type="text" name="name" placeholder="Your name" />
-        <input type="email" name="_replyto" placeholder="Your email" />
-        <textarea
-          name="message"
-          placeholder="Enter your message here"
-        ></textarea>
-        <input type="file" name="file" placeholder="Attachments (optional)" />
-        <input type="hidden" name="_subject" value="Contact form submitted" />
-        <input type="hidden" name="_after" value="https://myhomepage.net/" />
-        <input type="hidden" name="_honeypot" value="" />
-        <input type="hidden" name="_confirmation" value="" />
-        <input type="submit" value="Send" />
-      </form> -->
-
-      <form action="https://formspree.io/zach@zachsgordon.com" method="POST">
-        <input type="text" name="name" placeholder="Your name" />
-        <input type="email" name="_replyto" placeholder="Your email" />
-        <textarea
-          name="message"
-          placeholder="Enter your message here"
-        ></textarea>
-        <input type="submit" value="send" />
-      </form>
+      <div id="contact">
+        <h2 class="header">Contact Me</h2>
+        <form
+          class="ui form"
+          action="https://formspree.io/zach@zachsgordon.com"
+          method="POST"
+        >
+          <div class="field">
+            <input required type="text" name="name" placeholder="Your name" />
+          </div>
+          <div class="field">
+            <input
+              required
+              type="email"
+              name="_replyto"
+              placeholder="Your email"
+            />
+          </div>
+          <div class="field">
+            <textarea
+              required
+              name="message"
+              placeholder="Enter your message here"
+            ></textarea>
+          </div>
+          <button
+            id="send"
+            class="ui inverted green basic button"
+            type="submit"
+          >
+            Send
+          </button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
