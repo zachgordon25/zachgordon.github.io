@@ -79,6 +79,14 @@ embed {
   outline: 1px solid #fff;
 }
 
+.project {
+  color: #fff;
+}
+
+.disclaimer {
+  font-style: italic;
+}
+
 @media (min-width: 500px) {
   #headshot {
     height: 300px;
