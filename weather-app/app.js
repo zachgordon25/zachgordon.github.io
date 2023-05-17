@@ -1,5 +1,5 @@
 $(() => {
-  $('form').on('click', '#submit', event => {
+  $('form').on('click', '#submit', (event) => {
     // Prevent auto refresh
     event.preventDefault();
 
@@ -14,7 +14,7 @@ $(() => {
     let $zipBar = $('#zip-bar');
     let zipCode = $zipBar.val();
     let weatherEndpoint = `https://api.openweathermap.org/data/2.5/weather?zip=${zipCode}&APPID=27191dbc29ccfde300356183b803d41f`;
-    $.ajax({ url: weatherEndpoint }).then(data => {
+    $.ajax({ url: weatherEndpoint }).then((data) => {
       let weatherConditions = data.weather[0];
       let tempK = data.main.temp;
 
@@ -27,7 +27,7 @@ $(() => {
       // Using main weather term to search for a gif
       let gifEndpoint = `https://api.giphy.com/v1/gifs/translate?api_key=lutoU47bgWimQRM7XenOl702O4MDlPGG&s=${keyword}`;
 
-      $.ajax({ url: gifEndpoint }).then(gifData => {
+      $.ajax({ url: gifEndpoint }).then((gifData) => {
         // gif link location in JSON file
         let gifImg = gifData.data.images.fixed_height_downsampled.url;
         let $gifDiv = $(`<img src=${gifImg}>`).attr('id', 'gif');
@@ -51,13 +51,9 @@ $(() => {
         // append information to body
         const $city = $('<h2>').text(weatherConditions.name);
         $('#forecast').append($city);
-        const $temp = $('<h3>').text(
-          `Current temperature: ${weatherConditions.temp}°F`
-        );
+        const $temp = $('<h3>').text(`Current temperature: ${weatherConditions.temp}°F`);
         $('#forecast').append($temp);
-        const $conditions = $('<h3>').text(
-          `Current condition: ${weatherConditions.description}`
-        );
+        const $conditions = $('<h3>').text(`Current condition: ${weatherConditions.description}`);
         $('#forecast').append($conditions);
 
         // Setting up different css properties for each weather condition
@@ -70,7 +66,7 @@ $(() => {
           'Mist',
           'Thunderstorm',
           'Drizzle',
-          'Smoke'
+          'Smoke',
         ];
         if (keyword === weatherWords[0]) {
           $('body').attr('id', 'sunny');
@@ -122,4 +118,3 @@ $(() => {
   $aboutBtn.on('click', open);
   $close.on('click', close);
 });
-7;
